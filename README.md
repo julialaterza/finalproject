@@ -10,6 +10,8 @@ The goal of my project is to identify taxa from a widespread neotropical family 
 
 ## Methods
 
+I will use BioGeoBEARS.
+
 Commit and push often as you work.
 
 The tools I used were... See analysis files at (links to analysis files).
@@ -27,4 +29,3 @@ The biggest difficulty in implementing these analyses was...
 If I did these analyses again, I would...
 
 ## References
-
