@@ -16,6 +16,11 @@ Run frog data through BioGeoBEARS analyses and compare results through likelihoo
 5) Downloaded output files
 
 ## Files
+
+### *Script files*
+1) R_code_BioGeo_Grace -> R code with BioGeoBEARS analyses
+2) job_r.sh -> job file to run R code in Grace
+
 ### *Input files*
 1) output.nex -> Multiphylo file with 100 trees of frogs from family Leptodactylidae (downloaded from http://vertlife.org/)
 2) frog_newick.newick -> Newick file of a randomly selected tree from the output.nex file
