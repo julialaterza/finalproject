@@ -10,13 +10,14 @@ Run complete BioGeoBEARS analyses with my input data (Leptodactylidae phylogenet
 
 ## Steps taken in achieving goals:
 1) Selected one random phylogenetic tree from multiphylo file with 100 trees (downloaded from http://vertlife.org/) and converted it to newick format.
-2) Created a txt file with geographic data formatted for BioGeoBEARS (this data was invented so I could run the analysis. For the final project I need to get the actual range data for frogs and extract the biomes to which they belong in ArcMap)
+2) Created a txt file with geographic data formatted for BioGeoBEARS (this data was invented so I could run the analysis. For the final project I need to import the actual coordinate data for frog species and extract the biomes to which they belong in ArcMap)
 3) Made R script using the BioGeoBEARS example script as a basis, but included my own data. Ran it on my local computer
 4) Obtained output and saved it to the github repository (output described below)
 
 ## Additional steps needed for the complete analysis
 5) Clean frog coordinates using the r library Coordinate Cleaner
-6) Import frog coordinates and shapefiles of Brazilian biomes to extract actual ranges and include this data in the geographic txt file, to run the analysis again with real data
+6) Import frog coordinates and shapefiles of Brazilian biomes to extract actual ranges and include this data in the geographic txt file, to run the analysis again with real range data
+7) Simplify r code so it will run in Grace (there is an error that stops the job in Grace, because of a part of the code that saves figures). I am working on fixes for that. But all the analysis ran well in my local computer.
 
 
 ## Files
