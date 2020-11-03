@@ -14,9 +14,10 @@ Run complete BioGeoBEARS analyses with my input data (Leptodactylidae phylogenet
 3) Made R script using the BioGeoBEARS example script as a basis, but included my own data. Ran it on my local computer
 4) Obtained output and saved it to the github repository (output described below)
 
-5) Created a job file to run R script in Grace
-6) Ran job file in Grace
-7) Downloaded output files
+## Additional steps needed for the complete analysis
+5) Clean frog coordinates using the r library Coordinate Cleaner
+6) Import frog coordinates and shapefiles of Brazilian biomes to extract actual ranges and include this data in the geographic txt file, to run the analysis again with real data
+
 
 ## Files
 
