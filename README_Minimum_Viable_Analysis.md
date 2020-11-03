@@ -29,7 +29,7 @@ Run complete BioGeoBEARS analyses with my input data (Leptodactylidae phylogenet
 ### *Input files*
 1) output.nex -> Multiphylo file with 100 trees of frogs from family Leptodactylidae (downloaded from http://vertlife.org/)
 2) frog_newick.newick -> Newick file of a randomly selected tree from the output.nex file
-3) frog_biomes.txt -> Geographic range file formatted for BioGeoBEARS. These data was invented for the minimum viable analysis; for the final analysis I need to extract the actual geographic data using georeferenced data and shapefiles of Brazilian biomes.
+3) frog_biomes.txt -> Geographic range file formatted for BioGeoBEARS. These data were invented for the minimum viable analysis; for the final analysis I need to extract the actual geographic data using georeferenced points and shapefiles of Brazilian biomes.
 
 ### *Output files*
 1) tree_frog.pdf -> Phylogenetic tree used for analyses
