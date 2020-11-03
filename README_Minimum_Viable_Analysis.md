@@ -1,7 +1,7 @@
 # Phylogenetic Biology - Final Project Minimum Viable Analysis
 
 ## Main Goal:
-Run frog data through BioGeoBEARS analyses and compare results through likelihood ratio test and AICs
+Run complete BioGeoBEARS analyses with my input data (Leptodactylidae phylogenetic tree and presence absence data of tips in 6 Brazilian biomes)
 
 ## Specific goals:
 1) Prepare phylogenetic tree (newick file) and geographic data (text file) for analyses
@@ -9,11 +9,14 @@ Run frog data through BioGeoBEARS analyses and compare results through likelihoo
 3) Select best model using likelihood ratio test and AICs
 
 ## Steps taken in achieving goals:
-1) Selected one random phylogenetic tree from multiphylo file with 100 trees (downloaded from http://vertlife.org/) and converted it to newick format. Created a txt file with geographic data formatted for BioGeoBEARS
-2) Made R script using the BioGeoBEARS example script as a basis, but included my own data
-3) Created a job file to run R script in Grace
-4) Ran job file in Grace
-5) Downloaded output files
+1) Selected one random phylogenetic tree from multiphylo file with 100 trees (downloaded from http://vertlife.org/) and converted it to newick format.
+2) Created a txt file with geographic data formatted for BioGeoBEARS (this data was invented so I could run the analysis. For the final project I need to get the actual range data for frogs and extract the biomes to which they belong in ArcMap)
+3) Made R script using the BioGeoBEARS example script as a basis, but included my own data. Ran it on my local computer
+4) Obtained output and saved it to the github repository (output described below)
+
+5) Created a job file to run R script in Grace
+6) Ran job file in Grace
+7) Downloaded output files
 
 ## Files
 
