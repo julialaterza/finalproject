@@ -1,6 +1,7 @@
 
 # Load libraries
 
+library(rnaturalearthdata)
 library(countrycode)
 library(CoordinateCleaner)
 library(dplyr)
@@ -44,9 +45,14 @@ flags <- clean_coordinates(x = gbif,
                            countries = "countryCode",
                            species = "species",
                            tests = c("capitals", "centroids", "equal","gbif", "institutions",
-                                     "zeros", "countries")) # most test are on by default
+                                     "zeros", "countries")) 
 
 
 summary(flags)
 plot(flags, lon = "decimalLongitude", lat = "decimalLatitude")
+
+
+# Select only records in Brazil
+gbif <- gbif %>% filter(countryCode == "BRA")
+
 
