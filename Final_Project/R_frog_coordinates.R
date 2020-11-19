@@ -119,3 +119,5 @@ plot(flags, lon = "decimalLongitude", lat = "decimalLatitude")
 # Select only records in Brazil
 gbif <- gbif %>% filter(countryCode == "BRA")
 
+# Continue analysis
+
