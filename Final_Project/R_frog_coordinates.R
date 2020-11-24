@@ -60,8 +60,28 @@ plot(flags, lon = "decimalLongitude", lat = "decimalLatitude")
 gbif <- gbif %>% filter(countryCode == "BRA")
 
 
+View(gbif)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ##################
-# PART II
+# PART II - IDIGBIO
 ##################
 
 # Read IDIGBIO data 
@@ -71,13 +91,63 @@ idigbio <- read.csv("2frog_coordinates_IDIGBIO.csv")
 
 # Select columns of interest idigbio:isoCountryCode
 
-idigbio <- idigbio %>% select(dwc:scientificName, decimalLongitude, decimalLatitude, idigbio:isoCountryCode, dwc:individualCount,
-                        gbifID, family, taxonRank, dwc:coordinateUncertaintyInMeters, year,
-                        basisOfRecord, dwc:institutionCode)
+idigbio <- idigbio %>% select(dwc.scientificName, decimalLongitude, decimalLatitude, idigbio.isoCountryCode, dwc.individualCount,
+                        coreid, dwc.taxonRank, dwc.coordinateUncertaintyInMeters, year,
+                        dwc.basisOfRecord, dwc.institutionCode)
 
 
-# Column that has coordinates
 
+# Select only data that has coordinates
+idigbio <- idigbio %>%
+  filter(!is.na(decimalLongitude))%>%
+  filter(!is.na(decimalLatitude))
+
+# Plot coordinates in world map
+wm <- borders("world", colour="gray50", fill="gray50")
+ggplot()+ coord_fixed()+ wm +
+  geom_point(data = idigbio, aes(x = decimalLongitude, y = decimalLatitude),
+             colour = "darkred", size = 0.5)+
+  theme_bw()
+
+
+
+#convert country code from ISO2c to ISO3c
+idigbio$idigbio.isoCountryCode <-  countrycode(idigbio$idigbio.isoCountryCode, origin =  'iso2c', destination = 'iso3c')
+
+#flag problems
+idigbio <- data.frame(idigbio)
+flags <- clean_coordinates(x = idigbio,
+                           lon = "decimalLongitude",
+                           lat = "decimalLatitude",
+                           countries = "idigbio.isoCountryCode",
+                           species = "dwc.scientificName",
+                           tests = c("capitals", "centroids", "equal","gbif", "institutions",
+                                     "zeros", "countries")) 
+
+
+summary(flags)
+plot(flags, lon = "decimalLongitude", lat = "decimalLatitude")
+
+
+# Select only records in Brazil
+gbif <- gbif %>% filter(countryCode == "BRA")
+
+# Continue analysis
+
+
+###################
+# PART III - VERTNET
+###################
+
+# Read VERTNET data 
+
+vertnet <- read.csv("3frog_coordinates_VERTNET.csv")
+
+
+# Select columns of interest
+gbif <- gbif %>% select(scientificname, decimallongitude, decimallatitude, countrycode, individualcount,
+                        gbifpublisherid, family, taxonrank, coordinateuncertaintyinmeters, year,
+                        basisOfRecord, institutionCode)
 
 gbif <- gbif %>% select(species, decimalLongitude, decimalLatitude, countryCode, individualCount,
                         gbifID, family, taxonRank, coordinateUncertaintyInMeters, year,
@@ -118,6 +188,4 @@ plot(flags, lon = "decimalLongitude", lat = "decimalLatitude")
 
 # Select only records in Brazil
 gbif <- gbif %>% filter(countryCode == "BRA")
-
-# Continue analysis
 
