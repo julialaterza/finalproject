@@ -114,21 +114,22 @@ write.csv(idigbio, "idigbio.csv")
 frog_tree <-read.newick(file="frog_newick.newick")
 
 sp_tree <- as.data.frame(unique(frog_tree$tip.label)) 
+sp_tree <- sp_tree %>% rename(species = "unique(frog_tree$tip.label)")
 
 sp_idigbio <- unique(idigbio$species)
 
 
 sp_tree$duplicate <- sp_tree[,1] %in% sp_idigbio
 
-sp_tree[,1] %in% sp_idigbio
 
-sp_idigbio %in% sp_tree[,1] 
-
+sp_not_in_idig_bio <- sp_tree %>% filter(duplicate == "FALSE")
+sp_in_both <- sp_tree %>% filter(duplicate == "TRUE")
 
 # Drop species (tips) that don't have coordinate data
-for(i in 1:nrow(idigbio)) {
-  if(idigbio$species %in% sp_idigbio){}
-  
-}
 
-?match
+tips_to_drop <- as.vector(sp_not_in_idig_bio$species)
+frog_tree_reduced = drop.tip(frog_tree, tips_to_drop)
+
+
+# Confirm all species in final tree occur in both datasets
+frog_tree_reduced$tip.label %in% sp_in_both[,1]
