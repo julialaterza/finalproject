@@ -8,6 +8,7 @@ library(dplyr)
 library(ggplot2)
 library(rgbif)
 library(sp)
+library(phytools)
 
 ####################
 # PART 1 - GBIF
@@ -111,8 +112,6 @@ ggplot()+ coord_fixed()+ wm +
 
 
 
-#convert country code from ISO2c to ISO3c
-idigbio$idigbio.isoCountryCode <-  countrycode(idigbio$idigbio.isoCountryCode, origin =  'iso2c', destination = 'iso3c')
 
 #flag problems
 idigbio <- data.frame(idigbio)
@@ -122,17 +121,39 @@ flags <- clean_coordinates(x = idigbio,
                            countries = "idigbio.isoCountryCode",
                            species = "dwc.scientificName",
                            tests = c("capitals", "centroids", "equal","gbif", "institutions",
-                                     "zeros", "countries")) 
+                                     "zeros")) 
 
 
 summary(flags)
 plot(flags, lon = "decimalLongitude", lat = "decimalLatitude")
 
 
-# Select only records in Brazil
-gbif <- gbif %>% filter(countryCode == "BRA")
+
 
 # Continue analysis
+
+flags <- cf_age(x = idigbio,
+                lon = "decimalLongitude",
+                lat = "decimalLatitude",
+                taxon = "dwc.scientificName",
+                min_age = "year",
+                max_age = "year",
+                value = "flagged")
+
+## Testing temporal outliers on taxon level
+
+
+idigbio[!flags, "year"]
+
+
+idigbio <- idigbio[flags, ]
+
+
+sp_idigbio <- unique(idigbio$dwc.scientificName)
+
+
+frog_tree <-read.newick(file="frog_newick.newick")
+
 
 
 ###################
