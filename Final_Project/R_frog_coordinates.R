@@ -105,6 +105,9 @@ idigbio[!flags, "year"]
 idigbio <- idigbio[flags, ]
 
 
+# Write csv of simplified and cleaned data
+
+write.csv(idigbio, "idigbio.csv")
 
 # Compare species present in idigbio data and in our selected tree
 
@@ -112,11 +115,20 @@ frog_tree <-read.newick(file="frog_newick.newick")
 
 sp_tree <- as.data.frame(unique(frog_tree$tip.label)) 
 
-
-sp_idigbio <- unique(idigbio$dwc.scientificName)
-
-
-duplicated.data.frame(sp_tree, sp_idigbio, imcomparables= FALSE )
+sp_idigbio <- unique(idigbio$species)
 
 
+sp_tree$duplicate <- sp_tree[,1] %in% sp_idigbio
 
+sp_tree[,1] %in% sp_idigbio
+
+sp_idigbio %in% sp_tree[,1] 
+
+
+# Drop species (tips) that don't have coordinate data
+for(i in 1:nrow(idigbio)) {
+  if(idigbio$species %in% sp_idigbio){}
+  
+}
+
+?match
