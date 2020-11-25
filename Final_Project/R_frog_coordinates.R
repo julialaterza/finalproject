@@ -10,6 +10,7 @@ library(rgbif)
 library(sp)
 library(phytools)
 library(stringr)
+library(Hmisc)
 
 ##################
 # PART I - IDIGBIO
@@ -44,6 +45,18 @@ idigbio$species <- word(idigbio$dwc.scientificName, 1,2, sep=" ")
 
 # Remove formed "NAs" (records only identified until genus)
 
+idigbio <- idigbio %>%
+  filter(!is.na(species))
+
+# Capitalize first letter of species name
+
+idigbio$species <- capitalize(idigbio$species)
+
+# Replace space by underscore ("_") in species names
+
+idigbio$species <- sub(" ", "_", idigbio$species)
+
+
 
 
 # Plot coordinates in world map
@@ -62,7 +75,7 @@ flags <- clean_coordinates(x = idigbio,
                            lon = "decimalLongitude",
                            lat = "decimalLatitude",
                            countries = "idigbio.isoCountryCode",
-                           species = "dwc.scientificName",
+                           species = "species",
                            tests = c("capitals", "centroids", "equal","gbif", "institutions",
                                      "zeros")) 
 
@@ -100,13 +113,10 @@ frog_tree <-read.newick(file="frog_newick.newick")
 sp_tree <- as.data.frame(unique(frog_tree$tip.label)) 
 
 
-
 sp_idigbio <- unique(idigbio$dwc.scientificName)
 
 
-sp_idigbio_cl <- word(sp_idigbio, 1,2, sep=" ")
-
-
+duplicated.data.frame(sp_tree, sp_idigbio, imcomparables= FALSE )
 
 
 
