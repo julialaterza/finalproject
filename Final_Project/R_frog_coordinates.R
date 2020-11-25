@@ -38,7 +38,12 @@ idigbio <- idigbio %>%
 
 idigbio <- idigbio %>% filter(!grepl("sp.|aff.|cf.", dwc.scientificName))
 
-# 
+# Make new column called "species", that only contains species names (no date and who described it)
+
+idigbio$species <- word(idigbio$dwc.scientificName, 1,2, sep=" ")
+
+# Remove formed "NAs" (records only identified until genus)
+
 
 
 # Plot coordinates in world map
