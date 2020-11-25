@@ -9,6 +9,7 @@ library(ggplot2)
 library(rgbif)
 library(sp)
 library(phytools)
+library(stringr)
 
 ##################
 # PART I - IDIGBIO
@@ -31,6 +32,14 @@ idigbio <- idigbio %>% select(dwc.scientificName, decimalLongitude, decimalLatit
 idigbio <- idigbio %>%
   filter(!is.na(decimalLongitude))%>%
   filter(!is.na(decimalLatitude))
+
+
+# Remove species names that contain "sp.", "aff.", or "cf."
+
+idigbio <- idigbio %>% filter(!grepl("sp.|aff.|cf.", dwc.scientificName))
+
+# 
+
 
 # Plot coordinates in world map
 wm <- borders("world", colour="gray50", fill="gray50")
@@ -79,11 +88,20 @@ idigbio <- idigbio[flags, ]
 
 
 
+# Compare species present in idigbio data and in our selected tree
+
+frog_tree <-read.newick(file="frog_newick.newick")
+
+sp_tree <- as.data.frame(unique(frog_tree$tip.label)) 
+
+
 
 sp_idigbio <- unique(idigbio$dwc.scientificName)
 
 
-frog_tree <-read.newick(file="frog_newick.newick")
+sp_idigbio_cl <- word(sp_idigbio, 1,2, sep=" ")
+
+
 
 
 
