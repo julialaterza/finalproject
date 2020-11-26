@@ -62,7 +62,7 @@ system(cmdstr)
 # Prepare frog geography data for analyses
 # Import and set up frog ranges (as presence or absence in the 6 Brazilian biomes)
 # File: "frog_biomes.txt"
-geogfn = np(paste("frog_biomes.txt", sep=""))
+geogfn = np(paste("summary_biomes_per_species.txt", sep=""))
 
 # read.delim()
 
