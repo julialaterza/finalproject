@@ -1,0 +1,54 @@
+species,biome,AM,AT,PT,PM,CE,CA
+Adenomera_andreae,AMAZÔNIA,1,0,0,0,0,0
+Adenomera_bokermanni,"MATA ATLÂNTICA, ",0,1,0,0,0,0
+Adenomera_cotuba,CERRADO,0,0,0,0,1,0
+Adenomera_hylaedactyla,"AMAZÔNIA, CERRADO, PANTANAL, , CAATINGA",1,0,1,0,1,1
+Adenomera_juikitam,CERRADO,0,0,0,0,1,0
+Adenomera_marmorata,"MATA ATLÂNTICA, PANTANAL, ",0,1,1,0,0,0
+Adenomera_martinezi,"CERRADO, AMAZÔNIA",1,0,0,0,1,0
+Hydrolaetare_schmidti,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_bolivianus,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_bufonius,"CAATINGA, CERRADO",0,0,0,0,1,1
+Leptodactylus_caatingae,CAATINGA,0,0,0,0,0,1
+Leptodactylus_camaquara,CERRADO,0,0,0,0,1,0
+Leptodactylus_chaquensis,"CERRADO, , PANTANAL, AMAZÔNIA",1,0,1,0,1,0
+Leptodactylus_cunicularius,CERRADO,0,0,0,0,1,0
+Leptodactylus_didymus,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_discodactylus,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_elenae,"CERRADO, PANTANAL",0,0,1,0,1,0
+Leptodactylus_flavopictus,MATA ATLÂNTICA,0,1,0,0,0,0
+Leptodactylus_furnarius,"MATA ATLÂNTICA, PAMPA, CERRADO",0,1,0,1,1,0
+Leptodactylus_fuscus,"CERRADO, AMAZÔNIA, MATA ATLÂNTICA, PANTANAL, CAATINGA, PAMPA",1,1,1,1,1,1
+Leptodactylus_gracilis,"MATA ATLÂNTICA, PAMPA, CERRADO",0,1,0,1,1,0
+Leptodactylus_guianensis,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_jolyi,MATA ATLÂNTICA,0,1,0,0,0,0
+Leptodactylus_knudseni,"AMAZÔNIA, CERRADO",1,0,0,0,1,0
+Leptodactylus_labyrinthicus,"MATA ATLÂNTICA, CAATINGA, CERRADO, PANTANAL, AMAZÔNIA",1,1,1,0,1,1
+Leptodactylus_latinasus,"PAMPA, MATA ATLÂNTICA",0,1,0,1,0,0
+Leptodactylus_latrans,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_lauramiriamae,CERRADO,0,0,0,0,1,0
+Leptodactylus_leptodactyloides,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_longirostris,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_macrosternum,"AMAZÔNIA, ",1,0,0,0,0,0
+Leptodactylus_myersi,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_mystaceus,"AMAZÔNIA, CERRADO, MATA ATLÂNTICA",1,0,0,1,1,0
+Leptodactylus_mystacinus,"MATA ATLÂNTICA, CERRADO, PAMPA, ",0,1,0,1,1,0
+Leptodactylus_natalensis,MATA ATLÂNTICA,0,1,0,0,0,0
+Leptodactylus_notoaktites,"CERRADO, MATA ATLÂNTICA, PAMPA",0,1,0,1,1,0
+Leptodactylus_paraensis,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_pentadactylus,"MATA ATLÂNTICA, CERRADO, AMAZÔNIA, CAATINGA, PANTANAL",1,1,1,0,1,1
+Leptodactylus_petersii,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_podicipinus,"PANTANAL, AMAZÔNIA, CERRADO, MATA ATLÂNTICA, CAATINGA",1,1,1,0,1,1
+Leptodactylus_poecilochilus,MATA ATLÂNTICA,0,1,0,0,0,0
+Leptodactylus_pustulatus,"CERRADO, AMAZÔNIA",1,0,0,0,1,0
+Leptodactylus_rhodomystax,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_riveroi,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_savagei,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_stenodema,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_syphax,CERRADO,0,0,0,0,1,0
+Leptodactylus_tapiti,CERRADO,0,0,0,0,1,0
+Leptodactylus_troglodytes,"CAATINGA, MATA ATLÂNTICA, CERRADO",0,1,0,0,1,1
+Leptodactylus_validus,AMAZÔNIA,1,0,0,0,0,0
+Leptodactylus_vastus,"CAATINGA, MATA ATLÂNTICA",0,1,0,0,0,1
+Leptodactylus_wagneri,"AMAZÔNIA, CERRADO",1,0,0,0,1,0
+Lithodytes_lineatus,AMAZÔNIA,1,0,0,0,0,0
