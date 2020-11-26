@@ -107,8 +107,9 @@ idigbio <- idigbio[flags, ]
 
 # Write csv of simplified and cleaned data
 
-write.csv(idigbio, "idigbio.csv")
+# write.csv(idigbio, "idigbio.csv")
 
+#########################################################
 # Compare species present in idigbio data and in our selected tree
 
 frog_tree <-read.newick(file="frog_newick.newick")
@@ -125,6 +126,9 @@ sp_tree$duplicate <- sp_tree[,1] %in% sp_idigbio
 sp_not_in_idig_bio <- sp_tree %>% filter(duplicate == "FALSE")
 sp_in_both <- sp_tree %>% filter(duplicate == "TRUE")
 
+####################################################
+# Frog Tree managenment 
+
 # Drop species (tips) that don't have coordinate data
 
 tips_to_drop <- as.vector(sp_not_in_idig_bio$species)
@@ -133,3 +137,21 @@ frog_tree_reduced = drop.tip(frog_tree, tips_to_drop)
 
 # Confirm all species in final tree occur in both datasets
 frog_tree_reduced$tip.label %in% sp_in_both[,1]
+
+
+######################################################################
+# PART III - Format frog ranga data (obtained from QGIS) for BioGeoBEARS
+######################################################################
+
+frog_biomes <- read.csv("Frog_biomes_QGIS_atribute_table.csv")
+
+frog_biomes$duplicate <- frog_biomes$species %in% sp_in_both$species
+
+frog_biomes <- frog_biomes %>% filter(duplicate == "TRUE")
+
+# Create data frame showing where each of the species occurs (in terms of biomes)
+summary_biomes <- frog_biomes %>% group_by(species) %>% 
+  summarise(biome = paste(unique(name), collapse = ', '))
+
+# Write csv
+# write.csv(summary_biomes, "summary_biomes_per_species.csv")
