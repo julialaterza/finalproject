@@ -15,30 +15,15 @@ library(BioGeoBEARS)
 
 
 
-######################################
-# Part I - Data import and managenment
-
-# FROG PHYLOGENY
-# Import phyllogenetic trees of genus Leptodactylus and allies (multiphylo file containing 100 trees downloaded from http://vertlife.org/ , branch lengths represent time)
-# File: "output.nex"
-frog.multiphylo <- read.nexus("output.nex") 
-
-# Select random tree from the 100
-frog.tree1 <- frog.multiphylo$tree_7977
-
-
-
-
-
 #######################
-# Part II - BioGeoBEARS
+# BioGeoBEARS
 #This part of the code will comprise the BioGeoBEARS analyses of the data. First I will prepare the data, then run 4 tyes of biogeographic models, and compare these models.
 
 
 #######################################################
 # Import Newick file for frogs to be used in subsequent analyses
 
-trfn = np(paste("frog_newick.newick", sep=""))
+trfn = np(paste("frog_tree_reduced.newick", sep=""))
 moref(trfn)
 
 
@@ -79,10 +64,10 @@ max(rowSums(dfnums_to_numeric(tipranges@df)))
 # Set the maximum number of areas any species may occupy; this cannot be larger 
 # than the number of areas you set up, but it can be smaller.
 #J - select max range size observed from the data
-max_range_size = 3
+max_range_size = 6
 
 # Check the number of states for a given number of ranges (= number of different possible geographic ranges):
-numstates_from_numareas(numareas=6, maxareas=3, include_null_range=TRUE)
+numstates_from_numareas(numareas=6, maxareas=6, include_null_range=TRUE)
 
 
 
