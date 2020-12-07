@@ -9,7 +9,7 @@ The goal of my project was to identify taxa from a widespread neotropical subfam
 ## Methods
 
 ### Data acquisition and management
-I downloaded 100 time calibrated phylogenetic trees for the subfamily Leptodactylinae from vertlife.org and obtained a consensus tree using package ape in r. The resulting tree was mostly composed of polytomies, therefore I chose to use a randomly selected tree from the posterior distribution of trees downloaded ![Figure 1](Final_Project/tree_frog.pdf).
+I downloaded 100 time calibrated phylogenetic trees for the subfamily Leptodactylinae from vertlife.org and obtained a consensus tree using package ape in r. The resulting tree was mostly composed of polytomies, therefore I chose to use a randomly selected tree from the posterior distribution of trees for further biogeographic analyses ![Figure 1](Final_Project/tree_frog.pdf).
 and coordinate data from my group of interest from idigbio.com. I pruned trees to include only taxa for which georeferenced coordinates were available. Coordinates were cleaned manually and using the r package CoordinateCleaner. I kept only records that had representatives in the phylogenetic tree and that had coordinates. I also removed any records that weren't identified to the species level.
 
 ### Biogeographic analysis
