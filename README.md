@@ -27,7 +27,7 @@ I used the BioGeoBEARS package in r to fit 3 different biogeographic models to t
 ## Results
 
 The most supported model was DEC + J (![Table 1](https://github.com/julialaterza/finalproject/blob/master/Final_Project/restable_AICc_rellike_formatted.txt) ), so subsequent data visualization and interpretation was derived from the results from that model.
-![Figure 3](Final_Project/Frog_DEC_vs_DEC+J_M0_unconstrained_v2.pdf)
+![Figure 3](Final_Project/Figures/Frog_DEC_vs_DEC+J_M0_unconstrained_v2.jpg)
 
 ## Discussion
 
