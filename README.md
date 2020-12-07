@@ -48,4 +48,4 @@ Sá, R.O. de, Grant, T., Camargo, A., Heyer, W.R., and Ponssa, M.L. 2014. System
 Santos, J.C., Coloma, L.A., Summers, K., Caldwell, J.P., Ree, R., and Cannatella, D.C. 2009. Amazonian Amphibian Diversity Is Primarily Derived from Late Miocene Andean Lineages. PLoS Biology 7:0448–0461.
 
 
-![](Final_Project/Frog_DEC_vs_DEC+J_M0_unconstrained_v2-3.jpg)
+![](Final_Project/Figures/Frog_DEC_vs_DEC+J_M0_unconstrained_v2-3.jpg)
