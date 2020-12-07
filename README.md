@@ -14,7 +14,7 @@ The goal of my project is to identify taxa from a widespread neotropical subfami
 I downloaded 100 phylogenetic trees for the subfamily Leptodactylinae from vertlife.org and coordinate data from my group of interest from idigbio.com. I pruned trees to include only taxa for which georeferenced coordinates were available. Coordinates were cleaned manually and using the r package CoordinateCleaner. I kept only records that had representatives in the phylogenetic tree and that had coordinates. I also removed any records that weren't identified to the species level.
 
 ### Biogeographic analysis
-I used the BioGeoBEARS package in r to fit 3 different biogeographic models to the data: DEC, DIVAlike and BayArea, all models were run with or without the founder-event speciation, represented by parameter J. I compared models with corrected AIC (Akaike information criterion) to account for possible effects of sample size.  
+I used the BioGeoBEARS package in r to fit 3 different biogeographic models to the data: DEC, DIVAlike and BayArea, all models were run with or without the founder-event speciation, represented by parameter J. I compared models with corrected AIC (Akaike information criterion) to account for possible effects of sample size. Shapefiles
 
 
 ## Results
