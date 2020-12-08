@@ -9,10 +9,10 @@ Lineages that are widespread over large and heterogeneous areas often exhibit ph
 ![Figure 1](Final_Project/Biome_map.png).
 **Figure 1** Map of the six Brazilian biomes.
 
-The Amazon and the Atlantic forest are two disjunct neotropical forests currently separated by the Dry Diagonal (Caatinga and Cerrado), but they have been connected by forest bridges many times since the lifting of the Andes 45 million years ago as evidenced by pollen analyses, niche modelling, and splits between lineages inhabiting both forests. Many lineages occur both in the Amazon and Atlantic forests, and phylogeographic work has demonstrated a series of colonization events; from tens of millions of years ago through the late Pleistocene. The two rainforests extend through large geographical areas and encompass a suite of temperature and precipitation conditions, which makes these forests an ideal system to test hypotheses about physiological evolution. With information about the geographical origin, distribution, and ecology of widespread lineages of anurans throughout these regions, we can ask how thermal and water balance physiology has responded to, or itself influenced the evolution of these lineages. The objective of this project was to model the biogeographic history of the widespread subfamily of neotropical anurans Leptodactylinae, to create a phylogenetic framework to investigate their physiological evolution.
+The Amazon and the Atlantic Forest are two disjunct neotropical forests currently separated by the Dry Diagonal (Caatinga and Cerrado), but they have been connected by forest bridges many times since the lifting of the Andes 45 million years ago as evidenced by pollen analyses, niche modelling, and splits between lineages inhabiting both forests. Some Leptodactylinae species occur both in the Amazon and Atlantic Forests, and phylogeographic work has demonstrated a series of colonization events; from tens of millions of years ago through the late Pleistocene. The two rainforests extend through large geographical areas and encompass a suite of temperature and precipitation conditions, which makes these forests an ideal system to test hypotheses about physiological evolution. With information about the geographical origin, distribution, and ecology of widespread lineages of anurans throughout these regions, we can ask how thermal and water balance physiology has responded to, or itself influenced the evolution of these lineages. The objective of this project was to model the biogeographic history of the widespread subfamily of neotropical anurans Leptodactylinae, to create a phylogenetic framework to investigate their physiological evolution.
 
 
-The goal of my project was to identify taxa from a widespread neotropical subfamily of anurans (Leptodactylinae) that colonized the Atlantic forest (AT) from the Amazon (AM), to create a phylogenetic framework to investigate their physiological evolution. To do that I used phylogenetic comparative methods to infer the biogeographic history of tips, with particular interest in the colonization events that happened from the AM to the AF. I used a time calibrated phylogenetic tree from my target taxa obtained from vertlife.org. Occurrence data for all available taxa of interest will be downloaded from the public repositories GBIF, IDIGBIO, and Vertnet, and imported into ArcMap. I will use shapefiles from the major South American ecoregions as defined by Olson et al. (2001) to assign taxa of interest to the ecoregions which they occupy. Then I will use the r package BioGeoBEARS to test different models for the biogeographic history of Leptodactylidae, and select the best supported tree using AIC scores. The phylogenetic tree obtained from that analysis will include ancestral range reconstructions, which allow inferring instances of colonization of the AF by AM lineages. The selective pressures to which organisms are exposed vary according to their geographic distributions, particularly for anurans, which depend on a delicate hydrothermal balance to maintain their activity and metabolism. Understanding the biogeographic history of anurans is therefore very important to understand the evolution of their physiological traits under different climatic conditions.
+To achieve that I used phylogenetic comparative methods to infer the biogeographic history of tips, with particular interest in the colonization events that happened from the AM to the AF. I used a time calibrated phylogenetic tree from my target taxa obtained from vertlife.org. Occurrence data for all available taxa of interest will be downloaded from the public repositories GBIF, IDIGBIO, and Vertnet, and imported into ArcMap. I will use shapefiles from the major South American ecoregions as defined by Olson et al. (2001) to assign taxa of interest to the ecoregions which they occupy. Then I will use the r package BioGeoBEARS to test different models for the biogeographic history of Leptodactylidae, and select the best supported tree using AIC scores. The phylogenetic tree obtained from that analysis will include ancestral range reconstructions, which allow inferring instances of colonization of the AF by AM lineages. The selective pressures to which organisms are exposed vary according to their geographic distributions, particularly for anurans, which depend on a delicate hydrothermal balance to maintain their activity and metabolism. Understanding the biogeographic history of anurans is therefore very important to understand the evolution of their physiological traits under different climatic conditions.
 
 
 ## Methods
@@ -26,12 +26,12 @@ I pruned the Leptodactylinae tree, which originally contained 99 species to incl
 I obtained a publicly available Brazilian biomes shapefile from ibge.gov. I imported georeferenced coordinates for anurans in QGIS and used the spatial join tool to extract biome data for each of the anuran records.
 
 ### Biogeographic analysis
-I used the BioGeoBEARS package in r to fit 3 different biogeographic models to the data: DEC, DIVAlike and BayArea, all models were run with or without the founder-event speciation, represented by parameter J. I compared models with corrected AIC (Akaike information criterion) to account for possible effects of sample size.
+I used the BioGeoBEARS package in r to fit 3 different biogeographic models to the data: DEC, DIVAlike and BayArea, all models were run with or without the founder-event speciation, represented by parameter J (Matzke, 2013). I compared models with corrected AIC (Akaike information criterion) to account for possible effects of sample size.
 
 
 ## Results
 
-The most supported model was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results from that model.
+The most supported model was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results from that model. The model recovered
 
 **Table 1**
 ![](Final_Project/Figures/Model_comparison_AICc.jpg)
@@ -51,6 +51,21 @@ These results indicate...
 The biggest difficulty in implementing these analyses was...
 
 If I did these analyses again, I would...
+
+
+
+
+Biome delimitation
+
+Not including places out of Brazil
+
+More representation in the tree might change Results
+
+Problems with J parameter
+
+use maximum likelihood or Bayesian methods to find best tree
+
+
 
 ## References
 
