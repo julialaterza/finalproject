@@ -45,7 +45,8 @@ The most supported model was DEC+J (Table 1), so subsequent data visualization a
 **Figure 3**
 
 ![](Final_Project/Figures/Figure4_Biome_shifts.jpg)
-**Figure4**
+
+**Figure 4**
 
 ## Discussion
 
