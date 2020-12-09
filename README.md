@@ -31,7 +31,7 @@ I used the BioGeoBEARS package in r to fit 3 different biogeographic models to t
 
 ## Results
 
-The most supported model was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results from that model. The model recovered 15 biome shifts (founder-event speciation events), 23 range expansions, and 13 range contractions as the steps towards obtaining the current geographic character states in terminal nodes (Figure 2,3). Most range shifts occurred from Amazonia (11 events) and, of those, most were to the Atlantic Forest (7 events) (Figure 4).
+The most supported model was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results from that model. The model recovered 15 biome shifts (founder-event speciation events), 23 range expansions, and 13 range contractions as the steps towards obtaining the current geographic character states in terminal nodes (Figure 2,3). Most range shifts occurred from Amazonia (11 events) and, of those, most were to the Atlantic Forest (7 events) (Figure 4). The ancestral range reconstruction recovered the ancestral of all Leptodactilinae as inhabiting the Amazon and Atlantic forest (Figure 2), but there was a large ammount of uncertainty associated with this node.
 
 **Table 1**
 ![](Final_Project/Figures/Model_comparison_AICc.jpg)
@@ -46,9 +46,11 @@ The most supported model was DEC+J (Table 1), so subsequent data visualization a
 
 ![](Final_Project/Figures/Figure4_Biome_shifts.jpg)
 
-**Figure 4**
+**Figure 4** Diagram showing founder-event speciation events recovered in the BioGeoBEARS ancestral range reconstruction. The direction of the arrow shows the direction of biome shift and the width is relative to the number of events. Numbers represent total number of biome shifts in that direction. AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga.
 
 ## Discussion
+
+The results of this project point to Amazonia being the main source of lineages to other biomes, either by founder event speciation or range expansion into other biomes (Fig 2).
 
 These results indicate...
 
