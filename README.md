@@ -31,7 +31,7 @@ I used the BioGeoBEARS package in r to fit 3 different biogeographic models to t
 
 ## Results
 
-The most supported model was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results from that model. The model recovered 15 biome shifts (founder-event speciation events), 23 range expansions, and 13 range contractions as the steps towards obtaining the current geographic character states in terminal nodes (Figure 2,3). Most range shifts occurred from Amazonia (11 events) and, of those, most were to the Atlantic Forest (7 events) (Figure 4). The ancestral range reconstruction recovered the ancestral of all Leptodactilinae as inhabiting the Amazon and Atlantic forest (Figure 2), but there was a large ammount of uncertainty associated with this node.
+The most supported model was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results from that model. The model recovered 15 biome shifts (founder-event speciation events), 23 range expansions, and 13 range contractions as the steps towards obtaining the current geographic character states in terminal nodes (Figure 2,3). Most range shifts occurred from Amazonia (11 events) and, of those, most were to the Atlantic Forest (7 events) (Figure 4). The ancestral range reconstruction recovered the ancestral of all Leptodactilinae as inhabiting the Amazon and Atlantic forest (Figure 2), but there was a large amount of uncertainty associated with this node (Figure 3).
 
 **Table 1**
 ![](Final_Project/Figures/Model_comparison_AICc.jpg)
@@ -88,3 +88,6 @@ Ree, R.H., and Sanmartin, I. 2018. Conceptual and statistical problems with the 
 Sá, R.O. de, Grant, T., Camargo, A., Heyer, W.R., and Ponssa, M.L. 2014. Systematics of the Neotropical Genus Leptodactylus Fitzinger, 1826 (Anura: Leptodactylidae): Phylogeny, the Relevance of Non-molecular Evidence, and Species Accounts. South American Journal of Herpetology 9:S1–S128.
 
 Santos, J.C., Coloma, L.A., Summers, K., Caldwell, J.P., Ree, R., and Cannatella, D.C. 2009. Amazonian Amphibian Diversity Is Primarily Derived from Late Miocene Andean Lineages. PLoS Biology 7:0448–0461.
+
+**Table 2**
+![](Final_Project/Figures/Figure5_Biomes.png)
