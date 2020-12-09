@@ -31,7 +31,7 @@ I used the BioGeoBEARS package in r to fit 3 different biogeographic models to t
 
 ## Results
 
-The most supported model was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results from that model. The model recovered
+The most supported model was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results from that model. The model recovered 15 biome shifts (founder-event speciation events), 23 range expansions, and 13 range contractions as the steps towards obtaining the current geographic character states in terminal nodes (Figure 2,3). Most range shifts occurred from Amazonia (11 events) and, of those, most were to the Atlantic Forest (7 events) (Figure 4).
 
 **Table 1**
 ![](Final_Project/Figures/Model_comparison_AICc.jpg)
@@ -43,6 +43,9 @@ The most supported model was DEC+J (Table 1), so subsequent data visualization a
 
 ![](Final_Project/Figures/Frog_DEC_vs_DEC+J_M0_unconstrained_v2-4.jpg)
 **Figure 3**
+
+![](Final_Project/Figures/Figure4_Biome_shifts.jpg)
+**Figure4**
 
 ## Discussion
 
