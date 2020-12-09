@@ -50,7 +50,8 @@ The most supported model was DEC+J (Table 1), so subsequent data visualization a
 
 ## Discussion
 
-The results of this project point to Amazonia being the main source of lineages to other biomes, either by founder event speciation or range expansion into other biomes (Fig 2).
+The results of this project point to Amazonia as the main source of lineages to other biomes in the Subfamily Leptodactylinae, either by founder-event speciation or range expansion into other biomes (Fig 2). This is in accordance with previous literature pointing the region as a source of lineages to other areas (Antonelli et al. 2018), and specifically about the genus *Adenomera* (Fouquet et al. 2014). Surprisingly the model recovered the root of all Leptodactilinae to inhabit Amazonia and the Atlantic Forest. This result had high uncertainty (Figure 3) and probably does not reflect the true ancestral range of the group.
+Specifically in the genus *Adenomera*, the analysis indicated that the ancestor of this genus originated in Amazonia, which is consistent with previous studies of this group (Fouquet et al. 2014), but the authors suggested that the origin of the Atlantic Forest *Adenomera* .  
 
 These results indicate...
 
