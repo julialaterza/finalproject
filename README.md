@@ -35,7 +35,7 @@ I used the BioGeoBEARS package in r to fit 3 different biogeographic models to t
 
 ## Results
 
-The most supported model in the biogeographical analysis was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results of that model. The model recovered 15 biome shifts (founder-event speciation events), 23 range expansions, and 13 range contractions as the steps towards obtaining the current geographic character states in terminal nodes (Figure 3,4). Most range shifts occurred from Amazonia (11 events) and, of those, most were into the Atlantic Forest (7 events) (Figure 5). Many of the 23 range expansions inferred from the ancestral trait reconstruction involved the range expanding to more than one biome at the same event. The total number of biome colonization events that resulted from range expansion was 49, mostly from the Cerrado (19) and Amazonia (18), and in most cases these colonizations happened from contiguous biomes, that share at least part of their perimeter (Table 3).
+The most supported model in the biogeographical analysis was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results of that model. The model recovered 15 biome shifts (founder-event speciation events), 23 range expansions, and 13 range contractions as the steps towards obtaining the current geographic character states in terminal nodes (Figure 3,4). Most range shifts occurred from Amazonia (11 events) and, of those, most were into the Atlantic Forest (7 events) (Figure 5). Many of the 23 range expansions inferred from the ancestral trait reconstruction involved the range expanding to more than one biome at the same event. The total number of biome colonization events that resulted from range expansion was 49, mostly from the Cerrado (19) and Amazonia (18), and in most cases these colonizations happened from contiguous biomes, that share at least part of their perimeter (Table 2).
 The ancestral range reconstruction recovered the ancestral of all Leptodactilinae as inhabiting the Amazon and Atlantic forest (Figure 3), but there was a large amount of uncertainty associated with this node (Figure 4).
 
 **Table 1** Model comparison table for corrected AICs (Akaike information criterion) from BioGeoBEARS.
@@ -53,7 +53,7 @@ The ancestral range reconstruction recovered the ancestral of all Leptodactilina
 
 **Figure 5** Diagram showing founder-event speciation events recovered in the BioGeoBEARS ancestral range reconstruction. The direction of the arrow shows the direction of biome shift and the width is relative to the number of events. Numbers represent total number of biome shifts in that direction. AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga.
 
-**Table 3** Number of biome colonization events from range expansions in the ancestral range reconstruction. Contiguous biomes share at least part of the perimeter, while disjunct biomes are completely separated by other biomes.
+**Table 2** Number of biome colonization events from range expansions in the ancestral range reconstruction. Contiguous biomes share at least part of the perimeter, while disjunct biomes are completely separated by other biomes.
 
 ![](Final_Project/Figures/Table3_Range_expansion.jpg)
 
