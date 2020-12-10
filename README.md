@@ -21,7 +21,10 @@ Amazonia and Atlantic Forest are disjunct tropical forests, currently separated 
 ### Data acquisition and management
 I downloaded 100 time calibrated phylogenetic trees for the subfamily Leptodactylinae from vertlife.org and obtained a consensus tree using package ape in r. The resulting tree was mostly composed of polytomies, with only the genus *Adenomera* and its sister group *Lithodytes lineatus* being recovered in all trees. Due to the large discrepancies across trees, I opted to use a randomly selected tree from the posterior distribution for further biogeographic analyses.
 I downloaded publicly available records of anurans of the family Leptodactylidae from idigbio.com. The raw file contained 6120 records. I selected only taxa that belong to the subfamily Leptodactylinae and removed records that were not identified to the species level (e.g. genus only) using the r package dplyr. Then I used the r package CoordinateCleaner to remove records that did not have coordinate data, and flag records that might represent mistakes. The resulting data frame contained 2873 records identified to the species levels and containing georeferenced coordinates.
-I pruned the Leptodactylinae tree, which originally contained 99 species to include only taxa for which georeferenced coordinates were available, and obtained a final tree that contained 53 terminal taxa ![Figure 2](Final_Project/Figures/tree_frog.jpg).  
+I pruned the Leptodactylinae tree, which originally contained 99 species to include only taxa for which georeferenced coordinates were available, and obtained a final tree that contained 53 terminal taxa (Figure 2).
+
+![](Final_Project/Figures/tree_frog.jpg).  
+**Figure 2** Time-calibrated phylogenetic tree of the subfamily Leptodactylinae.
 
 ### Biome character states for terminal taxa
 I obtained a publicly available shapefile for Brazilian biomes from ibge.gov. I imported the cleaned data frame with georeferenced coordinates to QGIS and used the spatial join tool to extract biome data for each of the anuran records. Finally I formatted this resulting dataframe for BioGeoBEARS (Matzke et al. 2013) using the r package dplyr.
@@ -32,23 +35,23 @@ I used the BioGeoBEARS package in r to fit 3 different biogeographic models to t
 
 ## Results
 
-The most supported model in the biogeographical analysis was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results of that model. The model recovered 15 biome shifts (founder-event speciation events), 23 range expansions, and 13 range contractions as the steps towards obtaining the current geographic character states in terminal nodes (Figure 2,3). Most range shifts occurred from Amazonia (11 events) and, of those, most were into the Atlantic Forest (7 events) (Figure 4). Many of the 23 range expansions inferred from the ancestral trait reconstruction involved the range expanding to more than one biome at the same event. The total number of biome colonization events that resulted from range expansion was 49, mostly from the Cerrado (19) and Amazonia (18), and in most cases these colonizations happened from contiguous biomes, that share at least part of their perimeter (Table 3).
-The ancestral range reconstruction recovered the ancestral of all Leptodactilinae as inhabiting the Amazon and Atlantic forest (Figure 2), but there was a large amount of uncertainty associated with this node (Figure 3).
+The most supported model in the biogeographical analysis was DEC+J (Table 1), so subsequent data visualization and interpretation was derived from the results of that model. The model recovered 15 biome shifts (founder-event speciation events), 23 range expansions, and 13 range contractions as the steps towards obtaining the current geographic character states in terminal nodes (Figure 3,4). Most range shifts occurred from Amazonia (11 events) and, of those, most were into the Atlantic Forest (7 events) (Figure 5). Many of the 23 range expansions inferred from the ancestral trait reconstruction involved the range expanding to more than one biome at the same event. The total number of biome colonization events that resulted from range expansion was 49, mostly from the Cerrado (19) and Amazonia (18), and in most cases these colonizations happened from contiguous biomes, that share at least part of their perimeter (Table 3).
+The ancestral range reconstruction recovered the ancestral of all Leptodactilinae as inhabiting the Amazon and Atlantic forest (Figure 3), but there was a large amount of uncertainty associated with this node (Figure 4).
 
 **Table 1** Model comparison table for corrected AICs (Akaike information criterion) from BioGeoBEARS.
 ![](Final_Project/Figures/Model_comparison_AICc.jpg)
 
 
 ![](Final_Project/Figures/Frog_DEC_vs_DEC+J_M0_unconstrained_v2-3.jpg)
-**Figure 2** Phylogenetic tree of Leptodactylinae showing geographic character states at terminal nodes, and ancestral range reconstructions at internal nodes. AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga, PM: Pampa, PT: Pantanal.
+**Figure 3** Phylogenetic tree of Leptodactylinae showing geographic character states at terminal nodes, and ancestral range reconstructions at internal nodes. AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga, PM: Pampa, PT: Pantanal.
 
 
 ![](Final_Project/Figures/Frog_DEC_vs_DEC+J_M0_unconstrained_v2-4.jpg)
-**Figure 3** Phylogenetic tree of Leptodactylinae. Pie charts at internal nodes represent uncertainty related to the ancestral range reconstructions. AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga, PM: Pampa, PT: Pantanal.
+**Figure 4** Phylogenetic tree of Leptodactylinae. Pie charts at internal nodes represent uncertainty related to the ancestral range reconstructions. AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga, PM: Pampa, PT: Pantanal.
 
 ![](Final_Project/Figures/Figure4_Biome_shifts.jpg)
 
-**Figure 4** Diagram showing founder-event speciation events recovered in the BioGeoBEARS ancestral range reconstruction. The direction of the arrow shows the direction of biome shift and the width is relative to the number of events. Numbers represent total number of biome shifts in that direction. AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga.
+**Figure 5** Diagram showing founder-event speciation events recovered in the BioGeoBEARS ancestral range reconstruction. The direction of the arrow shows the direction of biome shift and the width is relative to the number of events. Numbers represent total number of biome shifts in that direction. AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga.
 
 **Table 3** Number of biome colonization events from range expansions in the ancestral range reconstruction. Contiguous biomes share at least part of the perimeter, while disjunct biomes are completely separated by other biomes.
 
@@ -57,7 +60,7 @@ The ancestral range reconstruction recovered the ancestral of all Leptodactilina
 ## Discussion
 
 ### Biogeographic analysis
-The results of this project point to Amazonia as the main source of lineages to other biomes in the subfamily Leptodactylinae, either by founder-event speciation or range expansion into other biomes (Fig 2). This is in accordance with previous literature pointing the region as a source of lineages to other areas (Antonelli et al. 2018), and specifically for the genus *Adenomera* (Fouquet et al. 2014). Surprisingly the model recovered the root of all Leptodactilinae to inhabit Amazonia and the Atlantic Forest (Figure 2). This result had high uncertainty (Figure 3) and probably does not reflect the true ancestral range of the group.
+The results of this project point to Amazonia as the main source of lineages to other biomes in the subfamily Leptodactylinae, either by founder-event speciation or range expansion into other biomes (Fig 2). This is in accordance with previous literature pointing the region as a source of lineages to other areas (Antonelli et al. 2018), and specifically for the genus *Adenomera* (Fouquet et al. 2014). Surprisingly the model recovered the root of all Leptodactilinae to inhabit Amazonia and the Atlantic Forest (Figure 3). This result had high uncertainty (Figure 4) and probably does not reflect the true ancestral range of the group.
 Specifically in the genus *Adenomera*, my analysis indicated that the ancestor of this genus originated in Amazonia, which is consistent with previous studies of this group (Fouquet et al. 2014), but the origin of the Atlantic Forest lineage of *Adenomera* was inferred to come from an ancestor from the Cerrado (Fouquet et al. 2014). Contrastingly, our results show an Amazonian ancestor splitting into one Cerrado and one Atlantic Forest clades. This might be because of the placement of *Adenomera andreae*, an Amazonian species, nested within the Atlantic Forest clade in the tree used for this project. This placement is not corroborated by previous work (Fouquet et al. 2014, Sá et al. 2014), and it might have resulted in a flawed ancestral range reconstruction for this clade.
 
 There were several independent colonization events into the Atlantic Forest, mainly from Amazonia (10), but also from the Cerrado (6). Most of the colonization events from Amazonia resulted from founder-event speciation events, corresponding to 7 events, against 3 events from range expansions. The colonizations from Cerrado showed the oposite pattern, with 4 colonizations from range expansions and only 2 from founder-event speciation events. The Atlantic Forest is contiguous to the Cerrado, but disjunct from Amazonia (Figure 1), which might shed light on these results, because if a lineage colonizes the Atlantic Forest from the Cerrado it is more likely to first expand the range, and then diverge over time into different taxa maintaining gene flow for extended periods of time. When it comes to the Amazonian lineages, the most likely way of colonizing the Atlantic Forest would be during the periods while the forests are connected through forest bridges (Ledo & Colli, 2017), and as soon as the forests separated any gene flow between the lineages would cease, leading to divergence. This would be more consistent with a "jump" event, or founder-event speciation. Consistent with this hypothesis, 75% of colonizations resulting from range expansions occurred among continuous, and only 24.5% among disjunct biomes.
@@ -76,7 +79,7 @@ Additionally, I only used biomes in Brazil, and anurans from the subfamily Lepto
 
 #### Low representation of taxa
 
-Another limitation from my project was the number of taxa included in the analysis: as mentioned above, the original phylogenetic tree included 99 taxa, but 46 taxa had to be removed due to a lack of georeferenced coordinates. Including more taxa would improve the performance of the model, and possibly reduce uncertainty of character states in the internal nodes. There were some groups with few representatives, and radically different character states at the terminal nodes (Figure 2,3), which provides the model little information for the ancestral range reconstruction.  
+Another limitation from my project was the number of taxa included in the analysis: as mentioned above, the original phylogenetic tree included 99 taxa, but 46 taxa had to be removed due to a lack of georeferenced coordinates. Including more taxa would improve the performance of the model, and possibly reduce uncertainty of character states in the internal nodes. There were some groups with few representatives, and radically different character states at the terminal nodes (Figure 3,4), which provides the model little information for the ancestral range reconstruction.  
 
 
 #### Problems with J parameter
