@@ -48,10 +48,8 @@ The most supported model in the biogeographical analysis was DEC+J (Table 1), so
 
 **Figure 4** Diagram showing founder-event speciation events recovered in the BioGeoBEARS ancestral range reconstruction. The direction of the arrow shows the direction of biome shift and the width is relative to the number of events. Numbers represent total number of biome shifts in that direction. AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga.
 
-**Table 2**
-![](Final_Project/Figures/Figure5_Biomes.png)
-
 **Table 3**
+
 ![](Final_Project/Figures/Table3_Range_expansion.jpg)
 
 ## Discussion
@@ -97,3 +95,8 @@ Ree, R.H., and Sanmartin, I. 2018. Conceptual and statistical problems with the 
 Sá, R.O. de, Grant, T., Camargo, A., Heyer, W.R., and Ponssa, M.L. 2014. Systematics of the Neotropical Genus Leptodactylus Fitzinger, 1826 (Anura: Leptodactylidae): Phylogeny, the Relevance of Non-molecular Evidence, and Species Accounts. South American Journal of Herpetology 9:S1–S128.
 
 Santos, J.C., Coloma, L.A., Summers, K., Caldwell, J.P., Ree, R., and Cannatella, D.C. 2009. Amazonian Amphibian Diversity Is Primarily Derived from Late Miocene Andean Lineages. PLoS Biology 7:0448–0461.
+
+**Table S1**
+
+
+![](Final_Project/Figures/Figure5_Biomes.png)
