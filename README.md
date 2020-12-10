@@ -57,16 +57,12 @@ The ancestral range reconstruction recovered the ancestral of all Leptodactilina
 
 ### Biogeographic analysis
 The results of this project point to Amazonia as the main source of lineages to other biomes in the subfamily Leptodactylinae, either by founder-event speciation or range expansion into other biomes (Fig 2). This is in accordance with previous literature pointing the region as a source of lineages to other areas (Antonelli et al. 2018), and specifically for the genus *Adenomera* (Fouquet et al. 2014). Surprisingly the model recovered the root of all Leptodactilinae to inhabit Amazonia and the Atlantic Forest. This result had high uncertainty (Figure 3) and probably does not reflect the true ancestral range of the group.
-Specifically in the genus *Adenomera*, the analysis indicated that the ancestor of this genus originated in Amazonia, which is consistent with previous studies of this group (Fouquet et al. 2014), but the origin of the Atlantic Forest *Adenomera* was recovered as an ancestor from the Cerrado. Contrastingly, our results show a Amazonian ancestor splitting into one Cerrado and one Atlantic Forest clades. This might be because of the placement of *Adenomera andreae*, an Amazonian species, nested within the Atlantic Forest clade. This placement is not corroborated by previous work (Fouquet et al. 2014, Sá et al. 2014), and it might have resulted in a flawed ancestral range reconstruction.
+Specifically in the genus *Adenomera*, my analysis indicated that the ancestor of this genus originated in Amazonia, which is consistent with previous studies of this group (Fouquet et al. 2014), but the origin of the Atlantic Forest lineage of *Adenomera* was inferred to come from an ancestor from the Cerrado (Fouquet et al. 2014). Contrastingly, our results show a Amazonian ancestor splitting into one Cerrado and one Atlantic Forest clades. This might be because of the placement of *Adenomera andreae*, an Amazonian species, nested within the Atlantic Forest clade. This placement is not corroborated by previous work (Fouquet et al. 2014, Sá et al. 2014), and it might have resulted in a flawed ancestral range reconstruction for this clade.
+
 There were several independent colonization events into the Atlantic Forest, mainly from Amazonia, but also from the Cerrado.
 
 Some of the nominal species from this project have very large ranges (Table 2), inhabiting several different biomes. Many of those are known cryptic species complexes (e.g. *Leptodactylus fuscus*, *L. podicipinus*), and further phylogenetic work would most likely result in the description of new species (Sá, 2014), possibly with much smaller ranges than currently acknowledged. This would have implications for biogeographic research in this group, because incorrect assignment of character states in the tips impacts the ancestral range reconstruction. However there are species that in fact have large geographic distributions, *Adenomera hylaedactyla* spans across four different biomes with little genetic differentiation (Fouquet, 2014).
 
-These results indicate...
-
-The biggest difficulty in implementing these analyses was...
-
-If I did these analyses again, I would...
 
 ### Project limitations
 
@@ -86,7 +82,7 @@ Criticism about the usage of parameter J (founder-event speciation) has been mou
 
 Phylogenetic tree
 
-Lastly and most importantly, I selected a random tree from the posterior distribution of trees downloaded, therefore I do not know if the tree I used was well supported, which could lead to misleading results. A way to improve the analysis is to use maximum likelihood and/or Bayesian methods to select one or several trees that are well supported. I plan to do that moving forward.
+Lastly and most importantly, I selected a random tree from a posterior distribution of trees; therefore, the selected tree was not necessarily the best tree in the posterior distribution.  For biogeographic inference, or any ancestral character reconstruction, an incorrect topology could lead to misleading results. A way that I intend to improve the analysis is to use methods that better summarize the posterior distribution (e.g. maximum clade credibility) so that there is less uncertainty in the tree for BioGeoBEARS.
 
 
 ## References
