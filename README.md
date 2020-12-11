@@ -94,18 +94,27 @@ Lastly and most importantly, I selected a random tree from a posterior distribut
 ## References
 
 Antonelli, A., Zizka, A., Antunes Carvalho, F., Scharn, R., Bacon, C.D., Silvestro, D., and Condamine, F.L. 2018. Amazonia is the primary source of Neotropical biodiversity. Proceedings of the National Academy of Sciences 115:6034–6039.
+
 Fouquet, A., Santana Cassini, C., Fernando Baptista Haddad, C., Pech, N., and Trefaut Rodrigues, M. 2014. Species delimitation, patterns of diversification and historical biogeography of the Neotropical frog genus Adenomera (Anura, Leptodactylidae). Journal of Biogeography 41:855–870.
+
 Gehara, M., Crawford, A.J., Orrico, V.G.D., Rodriguez, A., Lotters, S., and Fouquet, A. 2014. High Levels of Diversity Uncovered in a Widespread Nominal Taxon: Continental Phylogeography of the Neotropical Tree Frog Dendropsophus minutus. PLoS ONE 9:61–67.
+
 Gouveia, S.F., Bovo, R.P., Rubalcaba, J.G., Rodrigues da Silva, F., Maciel, N.M., Andrade, D. V, and Martinez, P.A. 2019. Biophysical Modeling of Water Economy Can Explain Geographic Gradient of Body Size in Anurans. The American Naturalist 193:51–58.
+
 Ledo, R.M.D., and Colli, G.R. 2017. The historical connections between the Amazon and the Atlantic Forest revisited. Journal of Biogeography 44:2551–2563.
+
 Matzke, N.J. 2013. Probabilistic historical biogeography: new models for founder‐event speciation, imperfect detection, and fossils allow improved accuracy and model‐testing. Frontiers of Biogeography 5:242–248.
+
 Ree, R.H., and Sanmartin, I. 2018. Conceptual and statistical problems with the DEC+J model of founder-event speciation and its comparison with DEC via model selection. Journal of Biogeography 45:741–749.
+
 Sá, R.O. de, Grant, T., Camargo, A., Heyer, W.R., and Ponssa, M.L. 2014. Systematics of the Neotropical Genus Leptodactylus Fitzinger, 1826 (Anura: Leptodactylidae): Phylogeny, the Relevance of Non-molecular Evidence, and Species Accounts. South American Journal of Herpetology 9:S1–S128.
+
 Santos, J.C., Coloma, L.A., Summers, K., Caldwell, J.P., Ree, R., and Cannatella, D.C. 2009. Amazonian Amphibian Diversity Is Primarily Derived from Late Miocene Andean Lineages. PLoS Biology 7:0448–0461.
+
 Sobral-souza, T., Lima-ribeiro, M.S., and Solferini, V.N. 2015. Biogeography of Neotropical Rainforests: past connections between Amazon and Atlantic Forest detected by ecological niche modeling. Evolutionary Ecology 29:643–655.
 
 
-
+Supplementary Material
 
 **Table S1** Species used in the analyses and the biomes which they occupy extracted from QGIS (1 = presence, 0 = absence). AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga, PM: Pampa, PT: Pantanal.
 
