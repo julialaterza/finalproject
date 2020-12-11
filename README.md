@@ -49,7 +49,7 @@ The ancestral range reconstruction recovered the ancestral of all Leptodactylina
 
 
 ![](Final_Project/Figures/Frog_DEC_vs_DEC+J_M0_unconstrained_v2-4.jpg)
-**Figure 4** Phylogenetic tree of Leptodactylinae. Piecharts at internal nodes represent relative probabilities of all states from the ancestral range reconstructionsLep. AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga, PM: Pampa, PT: Pantanal.
+**Figure 4** Phylogenetic tree of Leptodactylinae. Piecharts at internal nodes represent relative probabilities of all states from the ancestral range reconstructions. AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga, PM: Pampa, PT: Pantanal.
 
 ![](Final_Project/Figures/Figure4_Biome_shifts.jpg)
 
