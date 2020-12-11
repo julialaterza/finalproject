@@ -114,7 +114,7 @@ Santos, J.C., Coloma, L.A., Summers, K., Caldwell, J.P., Ree, R., and Cannatella
 Sobral-souza, T., Lima-ribeiro, M.S., and Solferini, V.N. 2015. Biogeography of Neotropical Rainforests: past connections between Amazon and Atlantic Forest detected by ecological niche modeling. Evolutionary Ecology 29:643–655.
 
 
-Supplementary Material
+## Supplementary Material
 
 **Table S1** Species used in the analyses and the biomes which they occupy extracted from QGIS (1 = presence, 0 = absence). AM: Amazonia, AF: Atlantic Forest, CE: Cerrado, CA: Caatinga, PM: Pampa, PT: Pantanal.
 
